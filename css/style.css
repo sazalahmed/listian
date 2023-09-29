@@ -1537,19 +1537,26 @@ FEATURED LISTING  END
 	bottom: -25px;
 	left: -25px;
 	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
 }
 
 .member_price h4 {
-	font-size: 24px;
-	font-weight: 700;
-	text-transform: capitalize;
-	margin-bottom: 25px;
+	font-size: 24px !important;
+	font-weight: 700 !important;
+	text-transform: capitalize !important;
+	margin-bottom: 25px !important;
 	transition: all linear .3s;
 	-webkit-transition: all linear .3s ease;
 	-moz-transition: all linear .3s ease;
 	-ms-transition: all linear .3s ease;
 	-o-transition: all linear .3s ease;
-	color: var(--colorBlack);
+	color: var(--colorBlack) !important;
+	background: none !important;
+	border: none !important;
+	display: block !important;
 }
 
 .member_price h5 {
@@ -3786,10 +3793,6 @@ PAGINATION PART END
 	color: var(--colorWhite);
 }
 
-.dashboard_content {
-	/* padding: 110px 35px 45px 0px; */
-}
-
 .manage_dashboard_single {
 	background: #287ACC;
 	padding: 50px 30px;
@@ -3803,7 +3806,7 @@ PAGINATION PART END
 	position: absolute;
 	font-size: 75px;
 	color: var(--colorWhite);
-	opacity: .4;
+	opacity: .2;
 	top: 50%;
 	left: 30px;
 	transform: translateY(-50%);
@@ -3840,10 +3843,10 @@ PAGINATION PART END
 
 .active_package {
 	background: var(--colorWhite);
-	box-shadow: rgba(149, 157, 165, 0.2) 0px 6px 14px;
 	padding: 30px;
 	border-radius: 10px;
 	margin-top: 45px;
+	border: 1px solid #eee;
 }
 
 .dashboard_content h4 {
@@ -3937,9 +3940,9 @@ PAGINATION PART END
 
 .my_listing {
 	background: var(--colorWhite);
-	box-shadow: rgba(149, 157, 165, 0.2) 0px 6px 14px;
 	padding: 30px;
 	border-radius: 5px;
+	border: 1px solid #eee;
 }
 
 .active_inactive h6 {
@@ -3950,7 +3953,7 @@ PAGINATION PART END
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #eee;
 	margin-bottom: 20px;
 }
 
@@ -3959,11 +3962,12 @@ PAGINATION PART END
 	height: 30px;
 	display: inline-block;
 	text-align: center;
-	background: #0D6EFD;
+	background: var(--colorPrimary);
 	color: var(--colorWhite);
 	font-size: 14px;
 	font-weight: 600;
 	line-height: 30px;
+	border-radius: 50% 0px 0px 50%;
 }
 
 .active_inactive h6 span.red {
@@ -3974,8 +3978,8 @@ PAGINATION PART END
 	border: 1px solid #eee;
 	overflow: hidden;
 	border-radius: 5px;
-	margin-bottom: 25px;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	margin-top: 25px;
+	/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
 .active_inactive_img {
@@ -4011,7 +4015,7 @@ PAGINATION PART END
 	width: auto;
 	background: #04A8E8;
 	color: var(--colorWhite);
-	padding: 5px 20px;
+	padding: 5px 12px;
 	margin-right: 10px;
 	font-size: 12px;
 	font-weight: 400;
@@ -4053,10 +4057,6 @@ PAGINATION PART END
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.active_inactive_text ul li a:hover {
-	color: var(--colorBlack);
-}
-
 .active_inactive_text ul li:nth-child(1) a {
 	background: #04A8E8;
 }
@@ -4085,8 +4085,8 @@ PAGINATION PART END
 .my_listing_single input,
 .my_listing_single textarea {
 	width: 100%;
-	border: 1px solid #C8D3FF;
-	padding: 15px 15px 15px 45px;
+	border: 1px solid #eee;
+	padding: 15px;
 	border-radius: 5px;
 	font-size: 14px;
 	font-weight: 400;
@@ -4119,15 +4119,15 @@ PAGINATION PART END
 }
 
 .my_listing_single .input_area i:hover {
-	color: #0533e7;
+	color: var(--colorPrimary);
 }
 
 .my_listing_single .select2-container--default .select2-selection--single {
-	border: 1px solid #C8D3FF;
+	border: 1px solid #eee;
 }
 
 .my_listing_single .select2-container--default .select2-selection--single .select2-selection__rendered {
-	padding-left: 35px;
+	padding-left: 15px;
 }
 
 .my_listing_single.mar_bottom {
@@ -4140,7 +4140,7 @@ PAGINATION PART END
 
 .input_area_2 input {
 	padding: 12px;
-	border: 1px solid #C8D3FF;
+	border: 1px solid #eee;
 	margin-bottom: 5px;
 }
 
@@ -4156,10 +4156,14 @@ PAGINATION PART END
 
 .amenities_check_area {
 	position: relative;
-	border: 1px dashed var(--colorPrimary);
+	border: 1px solid #eee;
 	padding: 20px;
 	margin-bottom: 25px;
 	border-radius: 5px;
+}
+
+.amenities_check_area input {
+	padding: 0;
 }
 
 .amenities_check_area label {
@@ -4176,7 +4180,7 @@ PAGINATION PART END
 	right: 20px;
 	top: 50%;
 	transform: translateY(-50%);
-	font-size: 45px;
+	font-size: 24px;
 	opacity: .3;
 	color: var(--colorPrimary);
 	transition: all linear .3s;
@@ -4227,7 +4231,7 @@ PAGINATION PART END
 	padding: 12px;
 	width: 90%;
 	border-radius: 5px;
-	border: 1px solid #C8D3FF;
+	border: 1px solid #eee;
 }
 
 .medicine_row_input button {
@@ -4259,16 +4263,16 @@ PAGINATION PART END
 }
 
 .medicine_row_input button:hover {
-	background: #4b6cf0;
+	background: var(--colorBlack);
 }
 
 #removeRow:hover,
 #removeRow2:hover {
-	background: #a00101;
+	background: var(--colorPrimary);
 }
 
 .visitor_rev_single {
-	border: 1px solid #ddd;
+	border: 1px solid #eee;
 	overflow: hidden;
 	border-radius: 5px;
 	padding: 20px;
@@ -4322,7 +4326,7 @@ PAGINATION PART END
 
 .visitor_rev_text ul li a {
 	width: auto;
-	background: #04A8E8;
+	background: var(--colorBlack);
 	color: var(--colorWhite);
 	padding: 5px 20px;
 	margin-right: 10px;
@@ -4345,12 +4349,8 @@ PAGINATION PART END
 	background: #FF0000;
 }
 
-.visitor_rev_text ul li a:hover {
-	color: #000;
-}
-
 .profile_pic_upload {
-	border: 1px solid #C8D3FF;
+	border: 1px solid #eee;
 	border-radius: 5px;
 	overflow: hidden;
 	position: relative;
@@ -4371,7 +4371,7 @@ PAGINATION PART END
 	width: 90%;
 	border-radius: 5px;
 	font-size: 13px;
-	background: #C8D3FF;
+	background: #eee;
 }
 
 .banner_pic_upload {
@@ -4382,17 +4382,26 @@ PAGINATION PART END
 	width: 30%;
 }
 
-.my_listing button {
+.my_listing .read_btn {
 	border: none;
+	padding: 10px 20px;
+	background: var(--colorPrimary);
+	color: var(--colorWhite);
+	border-radius: 5px;
+}
+
+.my_listing .read_btn:hover {
+	color: var(--colorWhite);
+	background: var(--colorBlack);
 }
 
 .my_listing .table {
 	margin: 0;
-	border-left: 1px solid #ddd;
+	border-left: 1px solid #eee;
 }
 
 .my_listing .table thead {
-	background: #CAE5FF;
+	background: #f665421c;
 	color: #0F1221;
 	font-size: 14px;
 	text-transform: capitalize;
@@ -4400,12 +4409,12 @@ PAGINATION PART END
 
 .my_listing .table thead tr th {
 	border: none;
-	border-right: 1px solid #cecece;
+	border-right: 1px solid #eee;
 	padding: 15px 10px;
 }
 
 .my_listing .table tr td {
-	border-right: 1px solid #ddd;
+	border-right: 1px solid #eee;
 	padding: 15px 10px;
 }
 
@@ -4438,7 +4447,7 @@ PAGINATION PART END
 }
 
 .my_listing .table tbody .status a {
-	background: #0082FF;
+	background: var(--colorPrimary);
 	width: 35px;
 	height: 35px;
 	text-align: center;
@@ -4455,20 +4464,6 @@ PAGINATION PART END
 
 .my_listing .table tbody .status a:hover {
 	background: #0F1221;
-}
-
-.my_listing .member_price h4 {
-	font-size: 16px !important;
-	text-transform: uppercase !important;
-	margin-bottom: 35px !important;
-	background: #2344ca;
-	display: inline-block !important;
-	border: 1px solid transparent;
-}
-
-.my_listing .member_price:hover h4 {
-	background: var(--colorWhite);
-	border-color: var(--colorPrimary);
 }
 
 .dashboard_breadcrumb .read_btn {
@@ -4559,7 +4554,7 @@ PAGINATION PART END
 .schedule ul li a {
 	width: 35px;
 	height: 35px;
-	background: #0D6EFD;
+	background: var(--colorBlack);
 	color: var(--colorWhite);
 	display: inline-block;
 	text-align: center;
@@ -4576,10 +4571,6 @@ PAGINATION PART END
 
 .schedule ul li:last-child a {
 	background: red;
-}
-
-.schedule ul li a:hover {
-	color: #000;
 }
 
 .wsus_schedule_create_single {
@@ -4602,7 +4593,7 @@ PAGINATION PART END
 }
 
 .wsus__invoice_top .invoice_logo {
-	width: 150px;
+	width: 165px;
 	display: block;
 	overflow: hidden;
 }
@@ -4640,6 +4631,7 @@ PAGINATION PART END
 	font-size: 16px;
 	font-weight: 400;
 	margin: 5px 0px;
+	color: var(--colorBlack);
 	transition: all linear .3s;
 	-webkit-transition: all linear .3s ease;
 	-moz-transition: all linear .3s ease;
@@ -4669,7 +4661,7 @@ PAGINATION PART END
 CUSTOM PAGE START END
 =====================*/
 #wsus__custom_page {
-	padding: 65px 0px 95px 0px;
+	padding: 75px 0px 100px 0px;
 }
 
 #wsus__custom_page p {
@@ -4810,7 +4802,7 @@ AGENT PROFILE START
 
 #medicine_row3 input {
 	width: 100%;
-	border: 1px solid #C8D3FF;
+	border: 1px solid #eee;
 	padding: 15px;
 	border-radius: 5px;
 	font-size: 14px;
@@ -4856,8 +4848,8 @@ AGENT PROFILE END
 
 .visitor_rev_area .input_area textarea {
 	width: 100%;
-	border: 1px solid #C8D3FF;
-	padding: 15px 15px 15px 45px;
+	border: 1px solid #eee;
+	padding: 15px;
 	border-radius: 5px;
 	font-size: 16px;
 	font-weight: 400;
@@ -4883,7 +4875,7 @@ AGENT PROFILE END
 }
 
 .visitor_rev_area .select2-container--default .select2-selection--single {
-	padding-left: 37px;
+	padding-left: 15px;
 }
 
 .wsus__rev_textarea {
@@ -5030,7 +5022,7 @@ AGENT PROFILE END
 	border-color: var(--colorPrimary);
 }
 
-.fp__single_payment {
+.wsus__single_payment {
 	box-shadow: var(--boxShadow);
 	border-radius: 5px;
 	overflow: hidden;
@@ -5038,23 +5030,27 @@ AGENT PROFILE END
 	display: block;
 	transition: all linear .3s;
 	margin-top: 25px;
-	height: 110px;
+	height: 60px;
+	-webkit-transition: all linear .3s;
+	-moz-transition: all linear .3s;
+	-ms-transition: all linear .3s;
+	-o-transition: all linear .3s;
 }
 
-.fp__single_payment img {
+.wsus__single_payment img {
 	box-shadow: var(--boxShadow);
 	border-radius: 4px;
 }
 
-.fp__single_payment:hover {
+.wsus__single_payment:hover {
 	background: var(--colorPrimary);
 }
 
-.fp__pay_modal_info p {
+.wsus__pay_modal_info p {
 	margin-bottom: 20px;
 }
 
-.fp__pay_modal_info ul li {
+.wsus__pay_modal_info ul li {
 	font-size: 16px;
 	color: var(--paraColor);
 	position: relative;
@@ -5062,7 +5058,7 @@ AGENT PROFILE END
 	margin: 10px 0px;
 }
 
-.fp__pay_modal_info ul li::after {
+.wsus__pay_modal_info ul li::after {
 	position: absolute;
 	content: "\f00c";
 	color: var(--colorWhite);
@@ -5084,28 +5080,28 @@ AGENT PROFILE END
 	-o-transition: all linear .3s;
 }
 
-.fp__pay_modal_info input,
-.fp__pay_modal_info textarea,
-.fp__pay_modal_info .nice-select {
+.wsus__pay_modal_info input,
+.wsus__pay_modal_info textarea,
+.wsus__pay_modal_info .nice-select {
 	border: 1px solid #eee;
 	margin-top: 15px;
 	font-weight: 400;
 }
 
-.fp__pay_modal_info .nice-select {
+.wsus__pay_modal_info .nice-select {
 	margin-top: 10px;
 }
 
-.fp__pay_modal_info .nice-select .option {
+.wsus__pay_modal_info .nice-select .option {
 	font-weight: 400;
 	margin: 0;
 }
 
-.fp__pay_modal_info .nice-select .option::after {
+.wsus__pay_modal_info .nice-select .option::after {
 	display: none;
 }
 
-.fp__payment_btn_area {
+.wsus__payment_btn_area {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
@@ -5113,7 +5109,7 @@ AGENT PROFILE END
 	padding-top: 20px;
 }
 
-.fp__payment_btn_area button {
+.wsus__payment_btn_area button {
 	border-radius: 3px;
 	border: none;
 	padding: 10px 30px;

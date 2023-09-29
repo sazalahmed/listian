@@ -23,11 +23,11 @@
 <body>
 
   <!--==========================
-        MENU PART START
-    ===========================-->
+    MENU PART START
+  ===========================-->
   <nav class="navbar navbar-expand-lg main_menu">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src="images/logo.png" alt="DB.Card">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -73,13 +73,12 @@
     </div>
   </nav>
   <!--==========================
-        MENU PART END
-    ===========================-->
-
+    MENU PART END
+  ===========================-->
 
 
   <!--=============================
-        DASHBOARD START
+    DASHBOARD START
   ==============================-->
   <section id="dashboard">
     <div class="container">
@@ -90,10 +89,10 @@
             <a href="dsahboard.html" class="dash_logo"><img src="images/user_large_img.jpg" alt="logo"
                 class="img-fluid"></a>
             <ul class="dashboard_link">
-              <li><a class="active" href="dsahboard.html"><i class="fas fa-tachometer"></i>Dashboard</a></li>
+              <li><a href="dsahboard.html"><i class="fas fa-tachometer"></i>Dashboard</a></li>
               <li><a href="dsahboard_listing.html"><i class="fas fa-list-ul"></i> My Listing</a></li>
               <li><a href="dsahboard_create_listing.html"><i class="fal fa-plus-circle"></i> Create Listing</a></li>
-              <li><a href="dsahboard_review.html"><i class="far fa-star"></i> Reviews</a></li>
+              <li><a class="active" href="dsahboard_review.html"><i class="far fa-star"></i> Reviews</a></li>
               <li><a href="dsahboard_wishlist.html"><i class="far fa-heart"></i> Wishlist</a></li>
               <li><a href="dsahboard_profile.html"><i class="far fa-user"></i> My Profile</a></li>
               <li><a href="dsahboard_order.html"><i class="fal fa-notes-medical"></i> Orders</a></li>
@@ -104,23 +103,48 @@
         </div>
         <div class="col-xl-9">
           <div class="dashboard_content">
-            <div class="row">
-              <div class="col-xl-12">
-                <div class="dashboard_breadcrumb">
-                  <span>Reviews</span>
-                  <ul>
-                    <li><a href="#">Home <i class="fas fa-caret-right"></i></a></li>
-                    <li><a href="#">Dashboard <i class="fas fa-caret-right"></i></a></li>
-                    <li><a class="bread_active" href="#">Reviews</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
             <div class="my_listing p_xm_0">
               <div class="row">
                 <div class="col-xxl-6 col-xl-12">
                   <div class="visitor_rev_area">
                     <h4>visitors Reviews</h4>
+                    <div class="visitor_rev_single">
+                      <div class="visitor_rev_img">
+                        <img src="images/listing_details_logo.png" alt="product" class="img-fluid w-100">
+                      </div>
+                      <div class="visitor_rev_text">
+                        <a class="title" href="#">Ristorante Del Arte <span>Oct 17, 2021</span></a>
+                        <p>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                        </p>
+                        <span class="small_text">Lorem ipsum dolor sit amet.</span>
+                        <ul>
+                          <li><a href="#"><i class="fal fa-edit"></i> edit</a></li>
+                          <li><a href="#"><i class="fal fa-trash-alt"></i> delete</a></li>
+                        </ul>
+                      </div>
+                      <form>
+                        <div class="input_area">
+                          <div class="wsus__search_area">
+                            <select class="select_2" name="state">
+                              <option value="">1</option>
+                              <option value="">2</option>
+                              <option value="">3</option>
+                              <option value="">4</option>
+                              <option value="">5</option>
+                            </select>
+                          </div>
+                          <div class="wsus__rev_textarea">
+                            <textarea cols="3" rows="3" placeholder="Lorem ipsum dolor sit amet."></textarea>
+                          </div>
+                          <button type="submit" class="read_btn">upload</button>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
                 <div class="col-xxl-6 col-xl-12">
@@ -148,7 +172,6 @@
                       <form>
                         <div class="input_area">
                           <div class="wsus__search_area">
-                            <i class="fas fa-star"></i>
                             <select class="select_2" name="state">
                               <option value="">1</option>
                               <option value="">2</option>
@@ -158,7 +181,6 @@
                             </select>
                           </div>
                           <div class="wsus__rev_textarea">
-                            <i class="far fa-edit"></i>
                             <textarea cols="3" rows="3" placeholder="Lorem ipsum dolor sit amet."></textarea>
                           </div>
                           <button type="submit" class="read_btn">upload</button>
@@ -175,13 +197,13 @@
     </div>
   </section>
   <!--=============================
-        DASHBOARD START
+    DASHBOARD START
   ==============================-->
 
 
   <!--==========================
-         FOOTER PART START
-    ===========================-->
+    FOOTER PART START
+  ===========================-->
   <footer>
     <div class="container">
       <div class="row text-white">
@@ -264,7 +286,7 @@
     </div>
   </footer>
   <!--==========================
-       FOOTER PART END
+    FOOTER PART END
   ===========================-->
 
 
@@ -273,7 +295,6 @@
     <i class="fas fa-chevron-up"></i>
   </div>
   <!--=============SCROLL BTN==============-->
-
 
 
   <!--jquery library js-->

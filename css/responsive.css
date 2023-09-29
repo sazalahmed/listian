@@ -25,10 +25,6 @@
 		font-size: 50px;
 	}
 
-	.dashboard_content {
-		/* padding: 110px 15px 45px 0px; */
-	}
-
 	/* CREATE LISTING START */
 	.medicine_row_input input {
 		width: 88%;
@@ -40,7 +36,7 @@
 
 	/* DASHBOARD LISTING */
 	.active_inactive_text {
-		padding: 60px 20px 20px 20px;
+		padding: 55px 20px 20px 20px;
 	}
 
 	.active_inactive_text h3 {
@@ -48,10 +44,6 @@
 	}
 
 	/* DASHBOARD ORDER */
-	.my_listing .table tr td {
-		font-size: 14px;
-	}
-
 	.my_listing .table .package,
 	.my_listing .table .e_date,
 	.my_listing .table .p_date {
@@ -67,7 +59,7 @@
 	}
 
 	.my_listing .table .tr_id {
-		min-width: 300px;
+		min-width: 240px;
 	}
 
 	/* DASHBOARD PROFILE*/
