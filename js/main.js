@@ -124,36 +124,24 @@ $(function () {
         breakpoint: 1200,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
-          dots: true,
-          arrows: false,
         }
       },
       {
         breakpoint: 992,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-          arrows: false,
         }
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-          arrows: false,
         }
       },
       {
         breakpoint: 576,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-          arrows: false,
         }
       }
     ]

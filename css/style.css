@@ -80,7 +80,7 @@ button {
 :root {
 	--colorPrimary: #f66542;
 	--paraColor: #7c7474;
-	--colorBlack: #050e2d;
+	--colorBlack: #1C212B;
 	--colorWhite: #ffffff;
 	--ratingColor: #FFC107;
 	--headingFont: 'Jost', sans-serif;
@@ -891,7 +891,7 @@ button {
     OUR CATEGORY START
 ========================*/
 .wsus__categorye_overlay {
-	padding: 75px 0px 100px 0px;
+	padding: 80px 0px 100px 0px;
 }
 
 .wsus__category_single {
@@ -1175,7 +1175,7 @@ button {
 FEATURED LISTING START
 =====================*/
 #wsus__featured_listing {
-	padding: 100px 0px 130px 0px;
+	padding: 95px 0px 130px 0px;
 	background: url(../images/listing_bg.jpg);
 	background-size: cover;
 	background-position: center;
@@ -1358,6 +1358,7 @@ FEATURED LISTING START
 	color: var(--paraColor);
 }
 
+#wsus__testimonial .slick-dots,
 #wsus__featured_listing .slick-dots {
 	position: absolute;
 	display: flex !important;
@@ -1365,6 +1366,7 @@ FEATURED LISTING START
 	bottom: -33px;
 }
 
+#wsus__testimonial .slick-dots li button,
 #wsus__featured_listing .slick-dots li button {
 	font-size: 0;
 	width: 20px;
@@ -1375,8 +1377,14 @@ FEATURED LISTING START
 	margin: 0 5px;
 	outline: 0;
 	opacity: .3;
+	transition: all linear .3s;
+	-webkit-transition: all linear .3s;
+	-moz-transition: all linear .3s;
+	-ms-transition: all linear .3s;
+	-o-transition: all linear .3s;
 }
 
+#wsus__testimonial .slick-dots li.slick-active button,
 #wsus__featured_listing .slick-dots li.slick-active button {
 	opacity: 1;
 }
@@ -1509,7 +1517,7 @@ FEATURED LISTING  END
 =====================*/
 .wsus__package_overlay {
 	background: rgba(255, 255, 255, 0.3);
-	padding: 100px 0px 100px 0px;
+	padding: 90px 0px 120px 0px;
 }
 
 .member_price {
@@ -1654,7 +1662,7 @@ FEATURED LISTING  END
     BLOG PART START
 =====================*/
 .blog_part_overlay {
-	padding: 75px 0px 100px 0px;
+	padding: 70px 0px 100px 0px;
 }
 
 .single_blog {
@@ -1850,7 +1858,7 @@ TESTIMONIAL PART START
 }
 
 .wsus__test_overlay {
-	padding: 95px 0px;
+	padding: 95px 0px 130px 0px;
 }
 
 .wsus__single_clients {
@@ -1888,7 +1896,7 @@ TESTIMONIAL PART START
 }
 
 #wsus__testimonial button {
-	display: none;
+	/* display: none; */
 }
 
 .wsus__single_clients .text {
@@ -1931,8 +1939,11 @@ TESTIMONIAL PART END
   FOOTER PART START
 =====================*/
 footer {
-	background: #a34832;
 	padding-top: 95px;
+	background: url(../images/footer_bg.jpg);
+	background-position: center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
 }
 
 footer h3 {
@@ -1948,6 +1959,7 @@ footer h3 {
 	font-weight: 400;
 	margin-bottom: 20px;
 	color: var(--colorWhite);
+	opacity: .7;
 }
 
 .footer_icon li {
@@ -1969,12 +1981,14 @@ footer h3 {
 	text-align: center;
 	line-height: 35px;
 	border-radius: 50%;
+	opacity: .7;
 }
 
 .footer_icon li a:hover {
 	color: var(--colorWhite);
 	background: var(--colorPrimary);
 	border-color: var(--colorPrimary);
+	opacity: 1;
 }
 
 .footer_link li {
@@ -1993,6 +2007,7 @@ footer h3 {
 	-moz-transition: all linear .3s ease;
 	-ms-transition: all linear .3s ease;
 	-o-transition: all linear .3s ease;
+	opacity: .8;
 }
 
 .footer_link li a i {
@@ -2010,6 +2025,10 @@ footer h3 {
 	margin-left: 12px;
 }
 
+.footer_link li a:hover {
+	opacity: 1;
+}
+
 .footer_bottom {
 	width: 100%;
 	padding: 20px;
@@ -2022,6 +2041,7 @@ footer h3 {
 	font-size: 16px;
 	font-weight: 400;
 	color: var(--colorWhite);
+	opacity: .7;
 }
 
 .footer_bottom p a {
@@ -2056,6 +2076,7 @@ footer h3 {
 .footer_contact ul li p {
 	padding-left: 30px;
 	position: relative;
+	opacity: .7;
 }
 
 .footer_contact ul li a i,
@@ -2096,6 +2117,7 @@ footer h3 {
 	-moz-transition: all linear .3s ease;
 	-ms-transition: all linear .3s ease;
 	-o-transition: all linear .3s ease;
+	opacity: .7;
 }
 
 .footer_bottom_link li a:hover {
@@ -2489,7 +2511,7 @@ PAGINATION PART END
   LISTING PAGE START
 =====================*/
 #listing_grid {
-	padding: 100px 0px 70px 0px;
+	padding: 100px 0px 100px 0px;
 }
 
 .listing_grid_sidbar {
@@ -4640,7 +4662,7 @@ PAGINATION PART END
 }
 
 .wsus__invoice_header_left .call_mail:hover {
-	columns: #0D6EFD;
+	color: var(--colorPrimary);
 }
 
 .invoice_right {
@@ -5115,3 +5137,195 @@ AGENT PROFILE END
 	padding: 10px 30px;
 	text-transform: capitalize;
 }
+
+
+/* ==================================
+    SIGNIN START
+=================================== */
+.wsus__login_page {
+	padding: 100px 0px;
+}
+
+.wsus__login_area {
+	background: #f6654212;
+	padding: 50px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.wsus__login_area h2 {
+	font-weight: 700;
+	font-size: 42px;
+	color: var(--colorBlack);
+	text-transform: capitalize;
+	margin-bottom: 5px;
+}
+
+.wsus__login_area p {
+	color: var(--colorBlack);
+	text-transform: capitalize;
+	margin-bottom: 25px;
+}
+
+.wsus__login_area .wsus__login_imput {
+	margin-bottom: 20px;
+}
+
+.wsus__login_area form label {
+	text-transform: capitalize;
+	font-size: 15px;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.wsus__login_area form input {
+	border: none;
+}
+
+.wsus__login_area form button {
+	width: 100%;
+	border-radius: 5px;
+	text-align: center;
+	border: none;
+	background: var(--colorPrimary);
+	color: var(--colorWhite);
+	padding: 13px 20px;
+	transition: all linear .3s;
+	-webkit-transition: all linear .3s;
+	-moz-transition: all linear .3s;
+	-ms-transition: all linear .3s;
+	-o-transition: all linear .3s;
+}
+
+.wsus__login_area form button:hover {
+	background: var(--colorBlack);
+}
+
+.wsus__login_check_area {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.wsus__login_area .form-check input {
+	padding: 0px;
+	border-radius: 50%;
+	border: 1px solid var(--colorPrimary);
+}
+
+.wsus__login_area .form-check input:checked {
+	background-color: var(--colorPrimary);
+	border-color: var(--colorPrimary);
+}
+
+.form-check-input:focus {
+	box-shadow: none;
+}
+
+.wsus__login_area .form-check label {
+	color: var(--paraColor);
+	margin: 0px;
+	text-transform: capitalize;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.wsus__login_imput a {
+	text-transform: capitalize;
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--colorPrimary);
+	transition: all 0.3s linear 0s;
+	-webkit-transition: all 0.3s linear 0s;
+	-moz-transition: all 0.3s linear 0s;
+	-ms-transition: all 0.3s linear 0s;
+	-o-transition: all 0.3s linear 0s;
+}
+
+.wsus__login_imput a:hover {
+	color: var(--colorBlack);
+}
+
+.wsus__login_area .or {
+	position: relative;
+	margin: 15px 0px 30px;
+}
+
+.wsus__login_area .or span {
+	text-transform: uppercase;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	background: var(--colorPrimary);
+	font-size: 13px;
+	text-align: center;
+	line-height: 27px;
+	color: var(--colorWhite);
+	border-radius: 3px;
+	position: relative;
+	z-index: 1;
+}
+
+.wsus__login_area .or::after {
+	position: absolute;
+	content: "";
+	background: var(--colorPrimary);
+	width: 98%;
+	height: 1px;
+	top: 50%;
+	right: 0px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+
+.wsus__login_area ul li a {
+	width: 35px;
+	height: 35px;
+	background: var(--colorPrimary);
+	color: var(--colorWhite);
+	text-align: center;
+	line-height: 35px;
+	border-radius: 50%;
+	margin-right: 5px;
+	font-size: 14px;
+	border: 1px solid transparent;
+	transition: all 0.3s linear 0s;
+	-webkit-transition: all 0.3s linear 0s;
+	-moz-transition: all 0.3s linear 0s;
+	-ms-transition: all 0.3s linear 0s;
+	-o-transition: all 0.3s linear 0s;
+}
+
+.wsus__login_area ul li a:hover {
+	border-color: var(--colorPrimary);
+	color: var(--colorPrimary);
+	background: var(--colorWhite);
+}
+
+.wsus__login_area .create_account {
+	margin-top: 30px;
+	color: var(--paraColor);
+	margin-bottom: 0px;
+}
+
+.wsus__login_area .create_account a {
+	color: var(--colorPrimary);
+	text-transform: capitalize;
+	font-weight: 500;
+	transition: all 0.3s linear 0s;
+	-webkit-transition: all 0.3s linear 0s;
+	-moz-transition: all 0.3s linear 0s;
+	-ms-transition: all 0.3s linear 0s;
+	-o-transition: all 0.3s linear 0s;
+}
+
+.wsus__login_area .create_account a:hover {
+	color: var(--colorBlack);
+}
+
+/* ==================================
+    SIGNIN END
+=================================== */
