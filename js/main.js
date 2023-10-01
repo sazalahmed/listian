@@ -348,23 +348,8 @@ $(function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  //=====NICE SELECT========
+  $('.select_js').niceSelect();
 
 
 });

@@ -95,22 +95,22 @@
 	}
 
 	.map_popup_content img {
-		width: 32% !important;
-		float: left;
+		/* width: 32% !important; */
+		/* float: left; */
 	}
 
 	.map_popup_text {
-		width: 68%;
-		float: left;
-		padding: 20px;
+		/* width: 68%; */
+		/* float: left; */
+		/* padding: 20px; */
 	}
 
 	.map_popup_content {
-		margin-bottom: 30px;
+		/* margin-bottom: 30px; */
 	}
 
 	.map_popup_content_map {
-		height: 300px;
+		/* height: 300px; */
 	}
 
 	/* MODIFY CSS */

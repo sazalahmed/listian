@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/venobox.min.css">
   <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/summernote.min.css">
+  <link rel="stylesheet" href="css/nice-select.css">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -64,17 +65,20 @@
             <a class="nav-link" href="contact.html">contact us</a>
           </li>
         </ul>
-        <ul class="right_menu">
-          <li class="nav-item signin">
-            <a class="nav-link" href="#">login</a>
-          </li>
-        </ul>
+        <div class="right_menu">
+          <select class="select_js">
+            <option value=""> English </option>
+            <option value="">Arabic</option>
+            <option value="">Hindi</option>
+          </select>
+        </div>
       </div>
     </div>
   </nav>
   <!--==========================
     MENU PART END
   ===========================-->
+
 
 
   <!--=============================
@@ -97,6 +101,7 @@
               <li><a href="dsahboard_profile.html"><i class="far fa-user"></i> My Profile</a></li>
               <li><a href="dsahboard_order.html"><i class="fal fa-notes-medical"></i> Orders</a></li>
               <li><a href="dsahboard_package.html"><i class="fal fa-gift-card"></i> Package</a></li>
+              <li><a href="dsahboard_message.html"><i class="far fa-comments-alt"></i> Message</a></li>
               <li><a href="#"><i class="far fa-sign-out-alt"></i> Logo</a></li>
             </ul>
           </div>
@@ -272,6 +277,8 @@
   <script src="js/isotope.pkgd.min.js"></script>
   <!--summer_note js-->
   <script src="js/summernote.min.js"></script>
+  <!--select js-->
+  <script src="js/jquery.nice-select.min.js"></script>
 
   <!--main/custom js-->
   <script src="js/main.js"></script>
