@@ -114,7 +114,7 @@ $(function () {
   $('.testi_slider').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     dots: true,
     arrows: false,
@@ -322,24 +322,26 @@ $(function () {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
         }
       },
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         }
       },
       {
         breakpoint: 768,
         settings: {
+          arrows: false,
           slidesToShow: 2,
         }
       },
       {
         breakpoint: 576,
         settings: {
+          arrows: false,
           slidesToShow: 1,
         }
       }
